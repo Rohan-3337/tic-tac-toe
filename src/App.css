@@ -1,0 +1,90 @@
+body{
+  height: 100vh;
+  background: #19375b;
+  color: #a7bfdc;
+
+}
+.container{
+  position: absolute;
+  height: 600px;
+  width: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+.board-row{
+  display: flex;
+  
+
+}
+
+.square{
+  background: rgba(255, 255, 255, 0.1);
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+}
+.board-container{
+  margin: 20px;
+}
+h4{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+
+  > span{
+    color: royalblue;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2.5rem;
+  font-weight: bold;
+  > button{
+    height: 3rem;
+    width: 5rem;
+    border: .2rem solid #a7bfdc;
+    background: #a7bfdc;
+    border-radius: 10px;
+    color: #666;
+    transition: .3s;
+    
+  }
+  > button:hover{
+    color: #eee;
+    background: #19375b;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* styles for browsers larger than 960px; */
+  .container{
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+  }
+  .square{
+    height: 80px;
+    width: 80px;
+    font-size: 2.5rem;
+  }
+  .title{
+    font-size: 2rem;
+  }
+
+}
